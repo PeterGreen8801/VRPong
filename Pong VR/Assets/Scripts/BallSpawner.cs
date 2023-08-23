@@ -13,6 +13,7 @@ public class BallSpawner : MonoBehaviour
         SpawnBall();
     }
 
+    //This probs wont work because its trying to use a vector2, can change to vector 3 and it will prob work
     private void SpawnBall()
     {
         GameObject newBall = Instantiate(ballPrefab, spawnPosition, Quaternion.identity);
